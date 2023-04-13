@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Avance 7 - UPC</h1>
+<hr>
+<p>sumar el factorial de dos numeros</p>
+<button onclick="FactorialNumero(1)">FactorialNumero</button>
+
+<p>Operaciones Logicas #1</p>
+<button onclick="EjercicioUno()">EjercicioUno</button>
+
+<p>Operaciones Logicas #2</p>
+<button onclick="EjercicioDos()">EjercicioDos</button>
+
+
+<p>Operaciones Logicas #3</p>
+<button onclick="EjercicioTres()">EjercicioTres</button>
+
+
+
+<script>
+//codigo de programacion - INICIO
+//CONDICIONALES COMPUESTAS &&
+function condicionalCompuestas_Usando(){
+    if((5>9)&&(7!=5)){
+        alert("TRUE")
+    }else{
+        alert("FALSE")
+    }
+}
+
+//CONDICIONALES ANIDADAS 
+functionCondicionalAnidadas_UsandoY(){
+    if(5>9){
+        if(7!=5){
+            alert("TRUE")
+        }else{           
+            alert("FALSE")
+        }
+    }else{
+         if(7!=5){
+            alert("TRUE")
+        }else{
+            alert("FALSE")
+        }
+    }        
+}
+        
+    
+
+
+
+
+
+
+
+
+
+
+//(((5 >= 5) != (9 < 10)) || ((10 > 10) == false))  
+function EjercicioUno(){
+    if(  (  (5 >= 5) != (9 < 10)  ) || (  (10 > 10 ) == false)  ) {
+      alert("TRUE")
+    }else{
+        alert("FALSE")
+    }   
+}
+
+
+
+
+//(((9 < 5) == true) || (! false || (5 == 9)))
+function EjercicioDos(){
+    if (  (  (  9 < 5) == true) || ( ! false || (5 == 9)  )  ) {
+        alert("TRUE")
+    }else{
+        alert("FALSE")
+    }
+}    
+
+    
+
+//((((7 => 7) == true) || (false == true))|| !(7 > 7))
+function Ejerciciotres(){
+     alert("TRUE")
+    }
+     alert("FALSE")
+    
+    
+    
+
+
+
+
+//(((true || ! false) && (false)) != ((false || false) != (true)))
+
+
+
+function SumarFactorialAyB(){
+    var numeroA = 5 //mensaje = 120
+    var numeroB = 5 //mensaje = 120
+    
+    var resultadoA =FactorialNumero(numeroA)
+    var resultadoB =FactorialNumero(numeroB)
+
+    var resultadoFinal = resultadoA + resultadoB
+    alert(resultadoFinal)//mensaje = 240
+}
+
+function FactorialNumero(numero){
+    //no hay (var numero) por que es un parametro de la function
+    var i = 1
+    var resultado = 1
+    while ( i <= numero){
+        resultado = resultado * i
+        i= i + 1
+    }
+    alert(resultado)
+    return esultado//NUEVO: la function ahora retorna un valor
+}
+
+
+//codigo de programacion - FIN
+</script>
+</body>
+</html>
