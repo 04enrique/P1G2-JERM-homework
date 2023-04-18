@@ -1,90 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mi Primera Pag. Web</title>
+    <title>Mi segunda pag. web</title>
 </head>
-<body style="background-color: aqua;">
-
-<p>Tipos de Encabezados</p>
-<h1>h1</h1>
-<h2>h2</h2>
-<h3>h3</h3>
-<h4>h4</h4>
-<h5>h5</h5>
-
-<p>Redirigir a otra pag. web usando
-    la etiqueta "a"
-</p>
-<a  href="https://www.google.com/"
-    target="_blank"
-    >
-    Ir a Google
-</a>
-
-<p  style="color:red ; background-color: yellow ;"
-    >
-    Un parrafo con texto color rojo y fondo amarillo
-</p>
-
-<p>Listas no enumeradas, se agrupa con la etiqueta
-    (ul) y luego se agregan los items en la etiqueta (li)
-</p>
-<ul>
-    <li>Item Lunes</li>
-    <li>Item Martes</li>
-    <li>Item Miercoles</li>
-</ul>
-
-<p>Listas enumeradas, se agrupa con la etiqueta
-    (ol) y luego se agregan los items en la etiqueta (li)</p>
-<ol style="color:green">
-    <li>Item</li>
-    <li style="color:red">Item</li>
-    <li>Item</li>
-</ol>
-
-<p>Para una imagen se utiliza la etiqueta (img)
-    con su propiedad [src] para entontrar la ubicacion de la imagen, la propiedad [width] para el ancho de la imagen, la propiedad [height] para el alto de la imagen
-</p>
-<img src="http://www.savewalterwhite.com/img/save_walter_banner.png"
-    width="500"
-    height="300">
-
-    <br>
-
-<img src="imagenes/logo_cumbre.jpg">
-
-<p>Para insertar un video se utiliza la etiqueta (video)</p>
-<video
-    src="videoplayback.mp4"
-    width=320  
-    height=240
-    controls poster="vistaprevia.jpg">
-    </video>
+<body style="color:darkkhaki">
 
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+    <video
+    style="position: fixed; left: 0; top: 0 ; height:1000px; z-index: -1;"
+    src="https://carontestudio.com/img/F4.mp4"
+    autoplay="true"
+    muted="true"
+    loop="true"
+    poster="https://carontestudio.com/img/contacto.jgp"></video>
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/imSefM4GPpE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>Las tablas en HTML utilizan la etiqueta (table) y para las
+        columnas es la etiqueta (Th) y para las filas la etiqueta (tr)
+    </p>
+    <table style="font-size: 20px; border: 1px solid white; width: 100%;">
+        <tr>
+           <th style="width: 30%;">Columna 1</th>
+           <th style="width: 50%; background-color: blue;">Columna 2</th>
+           <th style="width: 20%;">Columna 3</th>        
+        </tr>
+        <tr>
+            <th>aaaaaaaa</th>
+            <th>bbbbbbbb</th>
+            <th>cccccccc</th>          
+        </tr>
+    </table>
+
+    <div style="background-color: white; color:black">
+        <p>Este es el formato</p>
+        <p><b>Este es el formato negrita</b></p>
+        <p><i>Este es el formato cursiva que se utliza en algunas palabras<i></p>
+        <P><Ins>Este es el formato subrayado y se utiliza tambien para resaltar algunas frases<ins></p>
+        <p style="Text-decoration: underline ; text-decoration-style: double" >
+            Este es el formato doble subrayado </p>
+        <p style="font-size: 14px;">Este es el formato de la letra 14</p>
+        <p style="text-transform: uppercase;">Este es el formato todo mayuscula</p>
+        <p>Este es el formato <sup>superinsice</sup> y el <sub>subindice</sub></p>
+        <p style="font-family: Impact; font-size: 14px; color:red">
+            texto esta en COMPAC , tamaño 14 de color rojo</p>
+            <p style="font-family: 'Times New Roman';font-size: 14px;">
+                <i>texto en TIMES NEW ROMAN a 14 y cursiva</i></p>
+    </div>
 
 
+    <div style="background-color: white; color:black">
+        <h1>formato de texto</h1>
+        <p> El formato del texto en las pag web es muy similar a las 
+            opciones que existen en microsoft  word
+        </p>
+            <!--<b> - Bold text -->
+<p>Ejemplo de texto en formato <b>negrita</b> usando la etiqueta (b)</p>
+            <!--<strong> - Important text -->
+<p>Ejemplo de texto en formato <strong>Important</strong> usando la etiqueta (strong)</p>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<p>Ejemplo de texto en formato <i>italica text</i> usando la etiqueta (i)</p>
 
+<p>Ejemplo de texto en formato <em>Emphasized text</em> usando la etiqueta (em)</p>
+
+<p>Ejemplo de texto en formato <mark>Marked text</mark> usando la etiqueta (mark)</p>
+
+<p>Ejemplo de texto en formato <small>Smaller text</small> usando la etiqueta (small)</p>
+
+<p>Ejemplo de texto en formato <del>Deleted text</del> usando la etiqueta (del)</p>
+
+<p>Ejemplo de texto en formato <ins>Inserted text</ins> usando la etiqueta (ins)</p>
+
+<p>Ejemplo de texto en formato <sub>Subscript text</sub> usando la etiqueta (sub)</p>
+
+<p>Ejemplo de texto en formato <sup>Superscript text</sup> usando la etiqueta (sup)</p>
+    </div>
 
 </body>
 </html>
